@@ -16,7 +16,7 @@ body {
   clear: both; }
 
 h1.title {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: bold;
   margin: 0;
   display: block;
@@ -56,14 +56,14 @@ h1.title {
   background: #bbada0;
   padding: 15px 25px;
   font-size: 25px;
-  height: 25px;
+  height: 48px;
   line-height: 47px;
   font-weight: bold;
   border-radius: 3px;
   color: white;
   margin-top: 8px;
   text-align: center; }
-  .score-container:after, .best-container:after {
+  .score-container:after, .best-container:after, .score-container:before, .best-container:before {
     position: absolute;
     width: 100%;
     top: 10px;
@@ -89,9 +89,12 @@ h1.title {
     -moz-animation-fill-mode: both;
     animation-fill-mode: both; }
 
+.score-container:before, .best-container:before {
+  content: "SHRUBBIS";
+  top: 58px }
+
 .score-container:after {
   content: "Score"; }
-
 .best-container:after {
   content: "Best"; }
 
