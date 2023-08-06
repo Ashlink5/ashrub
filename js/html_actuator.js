@@ -140,3 +140,8 @@ HTMLActuator.prototype.clearMessage = function () {
   this.messageContainer.classList.remove("game-won");
   this.messageContainer.classList.remove("game-over");
 };
+
+HTMLActuator.prototype.setBackground = function (tile) {
+  document.getElementById("grid-container").style.backgroundImage =   `url(img/${tile}.jpg)`;
+
+}
