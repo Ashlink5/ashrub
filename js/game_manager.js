@@ -95,7 +95,17 @@ GameManager.prototype.actuate = function () {
     bestScore:  this.storageManager.getBestScore(),
     terminated: this.isGameTerminated()
   });
-
+var largest = 2;
+  this.grid.cells.forEach(row => {
+    row.forEach(cell => {
+      if(cell)
+      {
+        console.log(cell)
+        largest = Math.max(largest, cell.value)
+      }
+    })
+  })
+  this.actuator.setBackground(largest)
 };
 
 // Represent the current game as an object
